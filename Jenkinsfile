@@ -11,7 +11,7 @@ pipeline {
     stage('Login into OCP') {
       steps {
         script {
-          sh "oc login --token=${OPENSHIFT_TOKEN}" --server=${OPENSHIFT_SERVER}"
+          sh "oc login --token=${OPENSHIFT_TOKEN} --server=${OPENSHIFT_SERVER}"
         }
       }
     }
